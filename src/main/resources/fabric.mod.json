@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "violent_world",
+	"version": "${version}",
+	"name": "Lung's Violent World",
+	"description": "Adds things that want you dead",
+	"authors": [
+		"LUNGSVVORLD"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/violent_world/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lungsvvorld.violentworld.LungsViolentWorld"
+		],
+		"client": [
+			"net.lungsvvorld.violentworld.LungsViolentWorldClient"
+		],
+		"fabric-datagen": [
+			"net.lungsvvorld.violentworld.LungsViolentWorldDataGenerator"
+		]
+	},
+	"mixins": [
+		"violent_world.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
